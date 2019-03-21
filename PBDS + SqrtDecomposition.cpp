@@ -1,3 +1,5 @@
+
+
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -9,6 +11,35 @@ using namespace __gnu_pbds;
 #define inf 1000000000
 typedef tree<pii, null_type, less<pii>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;
 ordered_set S;
+///wanna do something better?
+/*
+
+#include<ext/pb_ds/assoc_container.hpp>
+
+using namespace __gnu_pbds;
+
+template<class key, class value, class cmp = std::less<key>>
+using ordered_map = tree<key, value, cmp, rb_tree_tag, tree_order_statistics_node_update>;
+
+ordered_map<int, int> my_map;
+*/
+/// trie ...
+/*
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/trie_policy.hpp>
+
+using namespace std;
+using namespace __gnu_pbds;
+
+typedef trie<
+string,
+null_type,
+trie_string_access_traits<>,
+pat_trie_tag,
+trie_prefix_search_node_update>
+pref_trie;
+*/
+
 int n, a[20003], bs, ans[20002];
 map<int, int> M, D;
 
